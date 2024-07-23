@@ -2,9 +2,6 @@ import type {Metadata} from "next";
 import {Inter} from "next/font/google";
 import "./globals.css";
 import React from "react";
-import {StackedLayout} from "@/components/stacked-layout";
-import {Navbar} from "@/components/navbar";
-import {Sidebar} from "@/components/sidebar";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -21,12 +18,7 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={inter.className}>
-        <StackedLayout
-            navbar={<Navbar>{"Hello Navbar"}</Navbar>}
-            sidebar={<Sidebar>{"Hello Sidebar"}</Sidebar>}
-        >
-            {children}
-        </StackedLayout>
+        {children}
         </body>
         </html>
     );

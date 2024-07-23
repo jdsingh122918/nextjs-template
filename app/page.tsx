@@ -1,9 +1,15 @@
-import {Button} from "@/components/button";
+import {StackedLayout} from '@/components/stacked-layout'
+import React from "react";
+import NavbarHeader from "@/common-util-components/navbar-header";
+import SidebarMenu from "@/common-util-components/sidebar-menu";
 
 export default function Home() {
     return (
-        <div>
-            <Button>Hello World</Button>
-        </div>
-    );
+        <StackedLayout
+            navbar={<NavbarHeader/>}
+            sidebar={<SidebarMenu/>}
+        >
+            {"Hello Home"}
+        </StackedLayout>
+    )
 }

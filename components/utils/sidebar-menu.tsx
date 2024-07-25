@@ -1,6 +1,6 @@
 import {Sidebar, SidebarBody, SidebarItem, SidebarSection} from "@/components/sidebar";
 import React from "react";
-import {navItems} from "@/common-util-components/navItems";
+import {navItems} from "@/components/utils/navItems";
 
 
 export default function SidebarMenu() {

@@ -1,6 +1,6 @@
 import {Navbar, NavbarItem, NavbarSection} from "@/components/navbar";
 import React from "react";
-import {navItems} from "@/common-util-components/navItems";
+import {navItems} from "@/components/utils/navItems";
 
 export default function NavbarHeader() {
     return <Navbar>
